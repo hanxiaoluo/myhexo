@@ -82,6 +82,14 @@
     <% } %>
 <% } %>
 
+<% if (!index){ %>
+  <% if (post.comments){ %>
+  <%- partial('post/git') %>
+  <% } else { %>
+    <div class="git"></div>
+  <% } %>
+<% } %>
+
 <%- partial('_partial/post-nav-button') %>
 
 <% if (!index) { %>
